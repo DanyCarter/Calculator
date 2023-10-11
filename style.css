@@ -1,72 +1,190 @@
-* {
-    font-family: 'Fraunces', serif;
-    color: #fff;
+body{
+  display: flex;
+  justify-content: center;
 }
 
-body {
-    margin: 0;
-    background-color: #224870;
-}
-
-.container {
+.calculator{
+    width: 429px;
+    height: 500px;
+    top: 100px;
+    position: relative;
+    background-color: rgb(34, 33, 33);
+    border-radius: 3px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.calculadora {
-    display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: 160px repeat(5, 75px);
-    background-color: #00916e;
-    padding: 15px;
-    border-radius: 32px;
-    box-shadow: 15px 10px 0px 5px #00000033;
+.screen{
+  border-radius: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  background-color: none;
+  color: white;
+  width: 335px;
+  font-size: 50px;
+  overflow-x:auto;
+  text-align: right;
+  white-space:nowrap; 
 }
 
-button {
-    cursor: pointer;
-    margin: 5px;
-    padding: 0;
-    border-radius: 32px;
-    font-size: 1.5em;
+
+.operations{
+  width: 310px;
+  height: 50px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  color: rgb(174, 172, 172);
+
+}
+
+#equal {
+  background-color: rgb(253, 180, 253); 
+  color: black;
+  transition: background-color 0.3s; 
+}
+#equal:hover {
+  background-color: rgb(223, 166, 223); 
+}
+
+#equal:active {
+  background-color: rgb(187, 151, 187); 
+}
+
+.button:hover{
+  background-color: rgb(70, 72, 71);
+}
+
+.button:active{
+  background-color: rgb(40, 40, 40);
+
+}
+
+.button{
+  margin: 2px;
+  opacity: none;
+  color: white;
+  background-color: rgb(48, 50, 48);
+  border: solid;
+  border-color: rgb(48, 50, 48);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  border-radius: 3px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+}
+
+.num:hover{
+  background-color: rgb(48, 50, 48);
+  border: solid;
+  border-color: rgb(48, 50, 48);
+
+}
+
+.num:active{
+  background-color: rgb(43, 42, 42);
+
+}
+
+.num{
+  margin: 2px;
+  opacity: none;
+  color: white;
+  background-color: rgb(70, 72, 71);
+  border: solid;
+  border-color: rgb(70, 72, 71);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  border-radius: 3px;
+  border: none;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+}
+
+.sign:hover{
+  background-color: rgb(48, 50, 48);
+  border: solid;
+  border-color: rgb(48, 50, 48);
+
+}
+
+.sign:active{
+  background-color: rgb(40, 40, 40);
+
+}
+
+.sign{
+    opacity: none;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 2px;
+    border: solid;
+    border-radius: 3px;
+    color: white;
+    width: 100px;
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(70, 70, 70);
+    height: 50px;
     border: none;
-    background-color: #00916e;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
 }
 
-button:active {
-    background-color: #006f54;
+.screen{
+    left: 2px;
+    top: 100px;
+    position: absolute;
 }
 
-button:focus {
-    outline: none;
+.operation {
+    right: 20px;
+    top: 50px;
+    position: absolute;
 }
 
-.col-2 {
-    grid-column: span 2;
+.fil1{
+    top: 439px;
+    position: absolute;
 }
 
-.display {
-    grid-column: 1 / -1;
-    padding: 16px;
-    display: flex;
-    margin: 10px 10px 20px;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: right;
-    justify-content: space-between;
-    word-break: break-all;
-    box-shadow: 0px 0px 0px 10px #00000033;
+.fil2{
+    top: 385px;
+    position: absolute;
 }
 
-#valor-actual {
-    font-size: 1.5em;
+.fil3{
+    top: 331px;
+    position: absolute;
 }
 
-#valor-anterior {
-    font-size: 2em;
+.fil4{
+    top: 277px;
+    position: absolute;
+}
+
+.fil5{
+    top: 224px;
+    position: absolute;
+}
+
+.fil6{
+    top: 170px;
+    position: absolute;
+}
+
+.col1{
+    left: 320px;
+}
+
+.col2{
+  left: 215px;
+}
+
+.col3{
+  left: 110px;
+}
+
+.col4{
+  left: 5px;
 }

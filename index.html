@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
-    <script src="index.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript" defer></script>
-</head>
-<body>
-    <div class="container">
-        <div class="calculadora">
-            <div class="display">
-                <div id="valor-anterior"></div>
-                <div id="valor-actual"></div>
-            </div>
-            <button class="col-2" onclick="display.borrarTodo()">C</button>
-            <button onclick="display.borrar()">&larr;</button>
-            <button class="operador" value="dividir">%</button>
-            <button class="numero">7</button>
-            <button class="numero">8</button>
-            <button class="numero">9</button>
-            <button class="operador" value="multiplicar">X</button>
-            <button class="numero">4</button>
-            <button class="numero">5</button>
-            <button class="numero">6</button>
-            <button class="operador" value="restar">-</button>
-            <button class="numero">1</button>
-            <button class="numero">2</button>
-            <button class="numero">3</button>
-            <button class="operador" value="sumar">+</button>
-            <button class="col-2 numero">0</button>
-            <button class="numero">.</button>
-            <button class="operador" value="igual">=</button>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="operations" id="operations"></div>
+      <div class="screen" id="screen">0</div>
+
+      <div class="fil1">
+        <button class="button operator col1" id="equal">=</button>
+        <button class="button num col2">.</button>
+        <button class="button num col3">0</button>
+        <button class="button sign col4" id="signe">+/-</button>
+      </div>
+
+      <div class="fil2">
+        <button class="button operator col1 ">+</button>
+        <button class="button num col2">3</button>
+        <button class="button num col3">2</button>
+        <button class="button num col4">1</button>
+      </div>
+
+      <div class="fil3">
+        <button class="button operator col1 ">-</button>
+        <button class="button num col2">6</button>
+        <button class="button num col3">5</button>
+        <button class="button num col4">4</button>
+      </div>
+
+      <div class="fil4">
+        <button class="button operator col1 ">*</button>
+        <button class="button num col2">9</button>
+        <button class="button num col3">8</button>
+        <button class="button num col4">7</button>
+      </div>
+
+      <div class="fil5">
+        <button class="button operator col1 " id="divide">/</button>
+        <button class="button col2" id="square">√</button>
+        <button class="button col3 exponent" id="exponent">X²</button>
+        <button class="button col4" id="one-x">1/x</button>
+      </div>
+
+      <div class="fil6">
+        <button class="button col1" id="delete">⌫</button>
+        <button class="button col2" id="clean">C</button>
+        <button class="button col3 pi" id="pi">π</button>
+        <button class="button col4" id="porcent">%</button>
+      </div>
     </div>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
